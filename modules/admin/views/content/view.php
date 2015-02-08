@@ -31,7 +31,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'id',
             'user_id',
             'created_at',
-            'modified_at',
+            'updated_at',
             'allow_comment',
             'comments',
             'views',

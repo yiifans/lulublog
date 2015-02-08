@@ -10,7 +10,7 @@ use Yii;
  * @property integer $id
  * @property integer $user_id
  * @property string $created_at
- * @property string $modified_at
+ * @property string $updated_at
  * @property integer $allow_comment
  * @property integer $comments
  * @property integer $views
@@ -30,6 +30,40 @@ use Yii;
  */
 class Content extends \app\core\base\BaseActiveRecord
 {
+	const TYPE_POST='post';
+	const TYPE_PAGE='page';
+	
+	const VISIBILITY_PUBLIC='1';
+	const VISIBILITY_HIDDEN='2';
+	const VISIBILITY_PASSWORD='3';
+	const VISIBILITY_PRIVATE='4';
+	
+	
+	const STATUS_PUBLISH='1';
+	const STATUS_DRAFT='2';
+	const STATUS_PENDING='3';
+
+	public static function getVisibilities()
+	{
+		return [
+			self::VISIBILITY_PUBLIC => '公开', 
+			self::VISIBILITY_HIDDEN => '回复可见', 
+			self::VISIBILITY_PASSWORD => '密码保护', 
+			self::VISIBILITY_PRIVATE => '私有'
+		];
+		// return ['public'=>'公开','hidden'=>'回复可见','password'=>'密码保护','private'=>'私有'];
+	}
+
+	public static function getStatuses()
+	{
+		return [
+			self::STATUS_PUBLISH => '发布', 
+			self::STATUS_DRAFT => '草稿', 
+			self::STATUS_PENDING => '等待审核'
+		];
+		// return ['publish'=>'发布','draft'=>'草稿','pending'=>'等待审核'];
+	}
+	
     /**
      * @inheritdoc
      */
@@ -46,7 +80,7 @@ class Content extends \app\core\base\BaseActiveRecord
         return [
             [['user_id', 'title', 'content', 'content_type'], 'required'],
             [['user_id', 'allow_comment', 'comments', 'views', 'diggs', 'burys', 'sticky', 'visibility', 'status'], 'integer'],
-            [['created_at', 'modified_at'], 'safe'],
+            [['created_at', 'updated_at'], 'safe'],
             [['content'], 'string'],
             [['password', 'content_type', 'template'], 'string', 'max' => 64],
             [['thumb', 'title'], 'string', 'max' => 256],
@@ -63,24 +97,24 @@ class Content extends \app\core\base\BaseActiveRecord
         return [
             'id' => 'ID',
             'user_id' => 'User ID',
-            'created_at' => 'Created At',
-            'modified_at' => 'Modified At',
-            'allow_comment' => 'Allow Comment',
-            'comments' => 'Comments',
-            'views' => 'Views',
-            'diggs' => 'Diggs',
-            'burys' => 'Burys',
-            'sticky' => 'Sticky',
-            'password' => 'Password',
-            'visibility' => 'Visibility',
-            'status' => 'Status',
-            'thumb' => 'Thumb',
-            'title' => 'Title',
-            'alias' => 'Alias',
-            'excerpt' => 'Excerpt',
-            'content' => 'Content',
-            'content_type' => 'Content Type',
-            'template' => 'Template',
+            'created_at' => '添加时间',
+            'updated_at' => '修改时间',
+            'allow_comment' => '允许评论',
+            'comments' => '评论数',
+            'views' => '浏览数',
+            'diggs' => '顶',
+            'burys' => '踩',
+            'sticky' => '置顶',
+            'password' => '访问密码',
+            'visibility' => '可见',
+            'status' => '状态',
+            'thumb' => '缩略图',
+            'title' => '标题',
+            'alias' => '别名',
+            'excerpt' => '简介',
+            'content' => '内容',
+            'content_type' => '内容类型',
+            'template' => '模板',
         ];
     }
 }

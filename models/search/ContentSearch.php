@@ -19,7 +19,7 @@ class ContentSearch extends Content
     {
         return [
             [['id', 'user_id', 'allow_comment', 'comments', 'views', 'diggs', 'burys', 'sticky', 'visibility', 'status'], 'integer'],
-            [['created_at', 'modified_at', 'password', 'thumb', 'title', 'alias', 'excerpt', 'content', 'content_type', 'template'], 'safe'],
+            [['created_at', 'updated_at', 'password', 'thumb', 'title', 'alias', 'excerpt', 'content', 'content_type', 'template'], 'safe'],
         ];
     }
 
@@ -59,7 +59,7 @@ class ContentSearch extends Content
             'id' => $this->id,
             'user_id' => $this->user_id,
             'created_at' => $this->created_at,
-            'modified_at' => $this->modified_at,
+            'updated_at' => $this->updated_at,
             'allow_comment' => $this->allow_comment,
             'comments' => $this->comments,
             'views' => $this->views,

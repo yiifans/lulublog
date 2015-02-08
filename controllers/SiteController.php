@@ -11,6 +11,7 @@ use app\models\ContactForm;
 use app\models\Post;
 use app\core\front\BaseFrontController;
 use app\models\User;
+use app\models\Content;
 
 class SiteController extends BaseFrontController
 {
@@ -52,7 +53,11 @@ class SiteController extends BaseFrontController
 
     public function actionIndex()
     {
-        return $this->render('index');
+    	// where
+    	// order by
+    	// limit 
+    	$posts = Content::findAll();
+        return $this->render('index',['posts'=>$posts]);
     }
 
     public function actionLogin()

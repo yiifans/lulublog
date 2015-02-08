@@ -61,7 +61,10 @@ class ContentController extends BaseBackController
     public function actionCreate()
     {
         $model = new Content();
-
+		$model->user_id=1;
+		$model->content_type=Content::TYPE_POST;
+		$model->loadDefaultValues();
+		
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
