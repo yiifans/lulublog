@@ -18,7 +18,7 @@ class TakonomySearch extends Takonomy
     public function rules()
     {
         return [
-            [['id', 'type_id', 'parent_id', 'contents', 'sort_num'], 'integer'],
+            [['id', 'type', 'parent_id', 'contents', 'sort_num'], 'integer'],
             [['name', 'alias', 'description'], 'safe'],
         ];
     }
@@ -57,7 +57,7 @@ class TakonomySearch extends Takonomy
 
         $query->andFilterWhere([
             'id' => $this->id,
-            'type_id' => $this->type_id,
+            'type' => $this->type,
             'parent_id' => $this->parent_id,
             'contents' => $this->contents,
             'sort_num' => $this->sort_num,

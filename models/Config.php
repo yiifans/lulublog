@@ -27,7 +27,7 @@ class Config extends \app\core\base\BaseActiveRecord
     public function rules()
     {
         return [
-            [['key', 'value'], 'required'],
+            [['key'], 'required'],
             [['value'], 'string'],
             [['key'], 'string', 'max' => 64]
         ];

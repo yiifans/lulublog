@@ -9,49 +9,60 @@ use app\models\Config;
 
 class BaseConfig extends BaseModel
 {
+	public function initAll()
+	{
+		$this->initAllInternael();
+	}
 	
-	protected function initValueInternael($key, $defaultValue = '')
+	public function saveAll()
+	{
+		$this->saveAllInternael();
+	}
+	
+	protected function getConfigKeys()
+	{
+		//return $this->attributes();
+		return array_keys($this->attributeLabels());
+	}
+	
+	protected function initAllInternael()
+	{
+		$keys = $this->getConfigKeys();
+		foreach ($keys as $key)
+		{
+			$this->initOneInternael($key);
+		}
+	}
+	
+	protected function initOneInternael($key, $defaultValue = '')
 	{
 		$model  = Config::findOne(['`key`'=>$key]);
 		if($model != null)
 		{
-			return $model->value;
+			$this->$key = $model->value;
 		}
 		else 
 		{
 			$model = new Config();
 			$model->key = $key;
-			$model->value = '';
-			
+			$model->value = $defaultValue;
 			$model->save();
+			
+			$this->$key = $defaultValue;
 		}
-		return $defaultValue;
 	}
 	
-	protected function saveAll($array)
+	protected function saveAllInternael()
 	{
-		foreach ($array as $key => $value)
+		$keys = $this->getConfigKeys();
+		foreach ($keys as $key)
 		{
-			$this->saveOne($key,$value);
+			$this->saveOneInternael($key, $this->$key);
 		}
 	}
 	
-    protected function saveOne($key,$value)
+    protected function saveOneInternael($key,$value)
     {
     	Config::updateAll(['value'=>$value], ['`key`'=>$key]);
-    	
-    	/* $model = Config::findOne(['`key`'=>$key]);
-    	if($model!==null)
-    	{
-    		Config::updateAll(['value'=>$value], ['`key`'=>$key]);
-    	}
-    	else
-    	{
-    		$model = new Config();
-    		$model->key = $key;
-    		$model->value = $value;
-    
-    		$model->save();
-    	} */
     }
 }

@@ -9,13 +9,12 @@ use app\models\Config;
 class ThemeConfig extends BaseConfig
 {
 	public $sys_site_theme;
-	
-
+	public $test_data_theme;
 	
     public function rules()
     {
         return [
-            [['sys_site_theme'], 'string'],
+            [['sys_site_theme','test_data_theme'], 'string'],
         ];
     }
 
@@ -26,19 +25,7 @@ class ThemeConfig extends BaseConfig
     {
         return [
             'sys_site_theme' => '主题',
-            
+            'test_data_theme'=>'测试'
         ];
-    }
-    
-    public function initValue()
-    {
-    	$this->sys_site_theme=parent::initValueInternael('sys_site_theme');
-    }
-    
-    public function save()
-    {
-    	parent::saveAll([
-    			'sys_site_theme' => $this->sys_site_theme,
-    			]);
     }
 }

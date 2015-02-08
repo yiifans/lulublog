@@ -4,6 +4,7 @@ use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
+use app\models\Takonomy;
 
 /* @var $this \yii\web\View */
 /* @var $content string */
@@ -35,8 +36,29 @@ AppAsset::register($this);
             echo Nav::widget([
                 'options' => ['class' => 'navbar-nav navbar-right'],
                 'items' => [
-                    ['label' => 'Home', 'url' => ['/site/index']],
-                    ['label' => '系统设置', 'url' => ['/admin/config']],
+                    ['label' => '首页', 'url' => ['/admin']],
+            		['label' => '系统设置', 
+            			'items' => [
+            		        ['label' => '基本设置', 'url' => ['config/basic']],
+            				['label' => '主题设置', 'url' => ['config/theme']],
+            		        ['label' => '文章设置', 'url' => '#'],
+            				['label' => '评论设置', 'url' => '#'],
+            			],
+					],
+            		['label' => '文章',
+	            		'items' => [
+		            		['label' => '新建', 'url' => ['content/create','type'=>'post']],
+            				['label' => '所有文章', 'url' => ['content/index','type'=>'post']],
+		            		['label' => '文章分类', 'url' => ['takonomy/index','type'=>Takonomy::TYPE_POST]],
+	            		],
+            		],
+            		['label' => '页面',
+	            		'items' => [
+		            		['label' => '新建', 'url' => ['content/create','type'=>'page']],
+		            		['label' => '所有页面', 'url' => ['content/index','type'=>'page']],
+		            		['label' => '页面分类', 'url' => ['takonomy/index','type'=>Takonomy::TYPE_PAGE]],
+	            		],
+            		],            		            		
                     ['label' => 'Contact', 'url' => ['/site/contact']],
                     Yii::$app->user->isGuest ?
                         ['label' => 'Login', 'url' => ['/site/login']] :

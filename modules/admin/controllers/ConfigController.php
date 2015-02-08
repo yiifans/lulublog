@@ -47,10 +47,10 @@ class ConfigController extends BaseBackController
     {
     	$model = new BasicConfig();
     	
-    	if ($model->load(Yii::$app->request->post()) && $model->save()) {
+    	if ($model->load(Yii::$app->request->post()) && $model->saveAll()) {
     		return $this->redirect(['view', 'id' => $model->id]);
     	} else {
-    		$model->initValue();
+    		$model->initAll();
     		return $this->render('basic',['model' => $model]);
     	}
     }
@@ -59,10 +59,10 @@ class ConfigController extends BaseBackController
     {
     	$model = new ThemeConfig();
     	 
-    	if ($model->load(Yii::$app->request->post()) && $model->save()) {
+    	if ($model->load(Yii::$app->request->post()) && $model->saveAll()) {
     		return $this->redirect(['view', 'id' => $model->id]);
     	} else {
-    		$model->initValue();
+    		$model->initAll();
     		return $this->render('theme',['model' => $model]);
     	}
     }
