@@ -11,8 +11,20 @@ use yii\filters\VerbFilter;
 use yii\db\ActiveRecord;
 use yii\base\Model;
 
-
 class BaseController extends Controller
 {
-   
+
+	public function behaviors()
+	{
+		return [
+			'verbs' => [
+				'class' => VerbFilter::className(), 
+				'actions' => [
+					'delete' => [
+						'post'
+					]
+				]
+			]
+		];
+	}
 }

@@ -9,6 +9,8 @@ use app\assets\AppAsset;
 /* @var $content string */
 
 AppAsset::register($this);
+
+
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -19,6 +21,8 @@ AppAsset::register($this);
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
+    
+    <?php $this->registerLinkTag(['rel'=>'archives','title'=>'Yii2|Yii爱好者中文社区门户','href'=>'test']);?>
 </head>
 <body>
 
@@ -49,10 +53,13 @@ AppAsset::register($this);
         ?>
 
         <div class="container">
+        
             <?= Breadcrumbs::widget([
                 'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
             ]) ?>
+            
             <?= $content ?>
+            
         </div>
     </div>
 

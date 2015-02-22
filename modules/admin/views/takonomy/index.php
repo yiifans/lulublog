@@ -2,12 +2,16 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
+use app\core\LuLu;
+use app\core\lib\Common;
+use app\models\Takonomy;
 
 /* @var $this yii\web\View */
 /* @var $searchModel app\models\search\TakonomySearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Takonomies';
+$type=LuLu::getGetValue('type');
+$this->title = Takonomy::getTypes($type);
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="takonomy-index">
@@ -16,7 +20,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a('Create Takonomy', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('新建', ['create','type'=>LuLu::getGetValue('type')], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?= GridView::widget([

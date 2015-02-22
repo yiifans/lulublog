@@ -14,26 +14,16 @@ use yii\filters\VerbFilter;
  */
 class TakonomyController extends BaseBackController
 {
-    public function behaviors()
-    {
-        return [
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'delete' => ['post'],
-                ],
-            ],
-        ];
-    }
+
 
     /**
      * Lists all Takonomy models.
      * @return mixed
      */
-    public function actionIndex()
+    public function actionIndex($type)
     {
         $searchModel = new TakonomySearch();
-        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+        $dataProvider = $searchModel->search(['type'=>$type]);
 
         return $this->render('index', [
             'searchModel' => $searchModel,
@@ -46,7 +36,7 @@ class TakonomyController extends BaseBackController
      * @param integer $id
      * @return mixed
      */
-    public function actionView($id)
+    public function actionView($id,$type)
     {
         return $this->render('view', [
             'model' => $this->findModel($id),
@@ -58,12 +48,13 @@ class TakonomyController extends BaseBackController
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
-    public function actionCreate()
+    public function actionCreate($type)
     {
         $model = new Takonomy();
-
+		$model->type=$type;
+		$model->loadDefaultValues();
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+            return $this->redirect(['index', 'type'=>$type]);
         } else {
             return $this->render('create', [
                 'model' => $model,
@@ -77,12 +68,12 @@ class TakonomyController extends BaseBackController
      * @param integer $id
      * @return mixed
      */
-    public function actionUpdate($id)
+    public function actionUpdate($id,$type)
     {
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+            return $this->redirect(['index', 'type'=>$type]);
         } else {
             return $this->render('update', [
                 'model' => $model,
@@ -96,11 +87,11 @@ class TakonomyController extends BaseBackController
      * @param integer $id
      * @return mixed
      */
-    public function actionDelete($id)
+    public function actionDelete($id,$type)
     {
         $this->findModel($id)->delete();
 
-        return $this->redirect(['index']);
+        return $this->redirect(['index', 'type'=>$type]);
     }
 
     /**

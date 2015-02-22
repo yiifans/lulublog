@@ -43,6 +43,20 @@ class Content extends \app\core\base\BaseActiveRecord
 	const STATUS_DRAFT='2';
 	const STATUS_PENDING='3';
 
+	public static function getTypes($type=null)
+	{
+		$ret = [
+		self::TYPE_POST => '文章',
+		self::TYPE_PAGE => '页面',
+				];
+		if($type!=null)
+		{
+			return $ret[$type];
+		}
+		return $ret;
+		// return ['public'=>'公开','hidden'=>'回复可见','password'=>'密码保护','private'=>'私有'];
+	}
+	
 	public static function getVisibilities()
 	{
 		return [

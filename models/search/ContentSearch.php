@@ -55,29 +55,7 @@ class ContentSearch extends Content
             return $dataProvider;
         }
 
-        $query->andFilterWhere([
-            'id' => $this->id,
-            'user_id' => $this->user_id,
-            'created_at' => $this->created_at,
-            'updated_at' => $this->updated_at,
-            'allow_comment' => $this->allow_comment,
-            'comments' => $this->comments,
-            'views' => $this->views,
-            'diggs' => $this->diggs,
-            'burys' => $this->burys,
-            'sticky' => $this->sticky,
-            'visibility' => $this->visibility,
-            'status' => $this->status,
-        ]);
-
-        $query->andFilterWhere(['like', 'password', $this->password])
-            ->andFilterWhere(['like', 'thumb', $this->thumb])
-            ->andFilterWhere(['like', 'title', $this->title])
-            ->andFilterWhere(['like', 'alias', $this->alias])
-            ->andFilterWhere(['like', 'excerpt', $this->excerpt])
-            ->andFilterWhere(['like', 'content', $this->content])
-            ->andFilterWhere(['like', 'content_type', $this->content_type])
-            ->andFilterWhere(['like', 'template', $this->template]);
+        $query->andFilterWhere($params);
 
         return $dataProvider;
     }

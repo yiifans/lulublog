@@ -71,6 +71,7 @@ AppAsset::register($this);
         ?>
 
         <div class="container">
+        admin layout
             <?= Breadcrumbs::widget([
                 'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
             ]) ?>

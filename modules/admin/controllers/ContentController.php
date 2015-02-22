@@ -30,10 +30,10 @@ class ContentController extends BaseBackController
      * Lists all Content models.
      * @return mixed
      */
-    public function actionIndex()
+    public function actionIndex($type)
     {
         $searchModel = new ContentSearch();
-        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+        $dataProvider = $searchModel->search(['content_type'=>$type]);
 
         return $this->render('index', [
             'searchModel' => $searchModel,
@@ -41,24 +41,13 @@ class ContentController extends BaseBackController
         ]);
     }
 
-    /**
-     * Displays a single Content model.
-     * @param integer $id
-     * @return mixed
-     */
-    public function actionView($id)
-    {
-        return $this->render('view', [
-            'model' => $this->findModel($id),
-        ]);
-    }
 
     /**
      * Creates a new Content model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
-    public function actionCreate()
+    public function actionCreate($type)
     {
         $model = new Content();
 		$model->user_id=1;
@@ -66,7 +55,7 @@ class ContentController extends BaseBackController
 		$model->loadDefaultValues();
 		
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+            return $this->redirect(['index', 'type' => $type]);
         } else {
             return $this->render('create', [
                 'model' => $model,
@@ -85,7 +74,7 @@ class ContentController extends BaseBackController
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+            return $this->redirect(['index', 'type' => $type]);
         } else {
             return $this->render('update', [
                 'model' => $model,

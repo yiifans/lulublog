@@ -2,24 +2,25 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
+use app\core\LuLu;
+use app\models\Content;
 
 /* @var $this yii\web\View */
 /* @var $searchModel app\models\search\ContentSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
-
-$this->title = 'Contents';
+$type=LuLu::getGetValue('type');
+$this->title = Content::getTypes($type);
 $this->params['breadcrumbs'][] = $this->title;
+
+
 ?>
 <div class="content-index">
 
-<div>
-admin content index view
-</div>
     <h1><?= Html::encode($this->title) ?></h1>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a('Create Content', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('新建'.Content::getTypes($type), ['create','type'=>$type], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?= GridView::widget([
@@ -30,7 +31,7 @@ admin content index view
 
             'id',
             'user_id',
-            'created_at',
+            'title',
             'updated_at',
             'allow_comment',
             // 'comments',
@@ -42,7 +43,7 @@ admin content index view
             // 'visibility',
             // 'status',
             // 'thumb',
-            // 'title',
+            // 
             // 'alias',
             // 'excerpt',
             // 'content:ntext',

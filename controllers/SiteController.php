@@ -15,6 +15,16 @@ use app\models\Content;
 
 class SiteController extends BaseFrontController
 {
+	public $testData='my data';
+	
+	public $testData2='my data2';
+	
+	public function init()
+	{
+		parent::init();
+		
+	}
+	
     public function behaviors()
     {
         return [
@@ -86,6 +96,8 @@ class SiteController extends BaseFrontController
 
     public function actionContact()
     {
+    	
+    	
         $model = new ContactForm();
         if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['adminEmail'])) {
             Yii::$app->session->setFlash('contactFormSubmitted');
@@ -100,6 +112,23 @@ class SiteController extends BaseFrontController
 
     public function actionAbout()
     {
-        return $this->render('about');
+    	
+    	
+    	/* return $this->render('/default/contact',['test'=>5]);
+    	 
+    	$content = $this->renderPartial('about',['test'=>5]);
+    	 
+    	$this->renderContent($content);
+    	 
+    	$this->renderFile('full file name',['test'=>5]);
+    	 
+    	$this->renderAjax('about',['test'=>'test']);
+    	 */
+    	
+    	//$this->layout='main';
+    	
+    	
+    	
+        return $this->render('about',['test'=>5,'testData'=>$this->testData]);
     }
 }

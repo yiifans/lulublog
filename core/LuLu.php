@@ -2,6 +2,7 @@
 
 namespace app\core;
 
+use yii\helpers\VarDumper;
 class LuLu extends \Yii
 {
 
@@ -164,6 +165,7 @@ class LuLu extends \Yii
 
 	public static function info($var, $category = 'application')
 	{
+		
 		$dump = VarDumper::dumpAsString($var);
 		self::info($dump, $category);
 	}
