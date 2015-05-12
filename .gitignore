@@ -27,3 +27,6 @@ phpunit.phar
 /phpunit.xml
 
 /runtime
+/backend/runtime
+/frontend/runtime
+/static/assets

@@ -81,7 +81,7 @@ class BaseActiveRecord extends ActiveRecord
 			}
 		}
 		
-		if($condition!==null)
+		if($condition!==null&&!empty($condition))
 		{
 			if (!ArrayHelper::isAssociative($condition)) {
 				// query by primary key

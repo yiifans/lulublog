@@ -17,14 +17,15 @@ class TimeHelper
 	
 	public static function formatTime($date) {
 		$str = '';
-		if(is_string($date))
+		/* if(is_string($date))
 		{
 			$timer = strtotime($date);
 		}
 		else{
 			$timer=$date;
-		}
+		} */
 	
+		$timer=$date;
 	
 		$diff = $_SERVER['REQUEST_TIME'] - $timer;
 		$day = floor($diff / 86400);

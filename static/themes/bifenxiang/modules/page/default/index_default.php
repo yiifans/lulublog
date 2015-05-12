@@ -36,7 +36,7 @@ $themeUrl= Resource::getThemeUrl();
             <div class="widget d_postlist">
                 <div class="title"><h2>热评文章</h2></div>
                 <ul>
-                	<?php echo $this->render(Resource::getThemePath('/views/_inc/post_list_widget'),['orderBy'=>'comment_count desc','limit'=>3]);?>
+                	<?php echo $this->render(Resource::getThemePath('/views/_inc/content_list'),['orderBy'=>'comment_count desc','limit'=>3]);?>
                 </ul>
             </div>
             <div class="widget ds-widget-recent-visitors">

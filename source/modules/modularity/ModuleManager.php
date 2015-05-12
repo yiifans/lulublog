@@ -87,6 +87,11 @@ class ModuleManager extends BaseComponent
                 {
                     $moduleInfo = str_replace(' ', '', ucwords(implode(' ', explode('-', $moduleFile))));
                     
+                    $class=null;
+                    $instance = null;
+                    $can_active_admin=null;
+                    $can_active_home=null;
+                    
                     while (($item = $moduleDir->read()) !== false)
                     {
                         $itemPath = $moduleRootPath . '/' . $moduleFile . '/' . $item;
@@ -97,33 +102,33 @@ class ModuleManager extends BaseComponent
                         if ($item === $moduleInfo . 'Module.php')
                         {
                             $class = 'source\modules\\' . $moduleFile . '\\' . $moduleInfo . 'Module';
-                            $instance = null;
-                            try
-                            {
-                                // $moduleObj = LuLu::createObject($class);
-                                $instance = new $class();
-                                if (empty($instance->name))
-                                {
-                                    $instance->name = $moduleFile;
-                                }
-                            }
-                            catch (Exception $e)
-                            {
-                                // $instance=$e;
-                            }
-                            
-                            $ret[$moduleFile] = [
-                                'id' => $moduleFile, 
-                                'class' => $class, 
-                                'instance' => $instance, 
-                                'can_install' => true, 
-                                'can_uninstall' => true, 
-                                'can_active_admin' => false, 
-                                'can_active_home' => false
-                            ];
-                            break;
                         }
                     }
+                    if($class!==null)
+                    {
+                        try
+                        {
+                            // $moduleObj = LuLu::createObject($class);
+                            $instance = new $class();
+                            if (empty($instance->name))
+                            {
+                                $instance->name = $moduleFile;
+                            }
+                        }
+                        catch (Exception $e)
+                        {
+                            // $instance=$e;
+                        }
+                    }
+                    $ret[$moduleFile] = [
+                        'id' => $moduleFile,
+                        'class' => $class,
+                        'instance' => $instance,
+                        'can_install' => true,
+                        'can_uninstall' => true,
+                        'can_active_admin' => false,
+                        'can_active_home' => false
+                    ];
                 }
             }
         }

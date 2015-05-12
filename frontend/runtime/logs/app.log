@@ -8809,3 +8809,617 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1431217637.993
     'REQUEST_TIME' => 1431217637
 ]
+2015-05-12 00:14:35 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'Resource' not found' in D:\wamp\www\lulublog\static\themes\bifenxiang\modules\post\default\detail_default.php:124
+Stack trace:
+#0 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile()
+#1 D:\wamp\www\lulublog\source\core\base\BaseView.php(27): yii\base\View->renderFile()
+#2 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\View.php(149): source\core\base\BaseView->renderFile()
+#3 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render()
+#4 D:\wamp\www\lulublog\frontend\controllers\ContentController.php(61): yii\base\Controller->render()
+#5 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\InlineAction.php(55): frontend\controllers\ContentController->actionDetail()
+#6 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array()
+#7 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#8 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#9 D:\wamp\www\lulublog\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction()
+#10 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#11 D:\wamp\www\lulublog\index.php(23): yii\base\Application->run()
+#12 {main}
+2015-05-12 00:14:35 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'post/default/detail'
+    'id' => '17'
+]
+
+$_COOKIE = [
+    'currentPark' => 'bc0cd8448afbcf51cc9a7c374334b14dde43e220ed63b868ecbe9c4254fabaa2s:198:\"{\"id\":\"1\",\"code\":\"QD1\",\"name\":\"\\u9752\\u5c9b\\u4e2d\\u5fb7\\u751f\\u6001\\u56ed\",\"shpID\":\"0\",\"workspace\":\"dd\",\"buildingString\":\"\",\"groupString\":\"\",\"landString\":\"\",\"parkString\":\"\",\"compare\":0,\"category\":3}\";'
+    '_identity' => '2b707a975b35d9093170b1f674e06552264e80010015cc13d0dd52436f3cc1ebs:17:\"[34,null,2592000]\";'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Maxthon/3.0 Chrome/22.0.1229.79 Safari/537.1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost:8080/lulublog/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN'
+    'HTTP_ACCEPT_CHARSET' => 'GBK,utf-8;q=0.7,*;q=0.3'
+    'HTTP_COOKIE' => 'currentPark=bc0cd8448afbcf51cc9a7c374334b14dde43e220ed63b868ecbe9c4254fabaa2s%3A198%3A%22%7B%22id%22%3A%221%22%2C%22code%22%3A%22QD1%22%2C%22name%22%3A%22%5Cu9752%5Cu5c9b%5Cu4e2d%5Cu5fb7%5Cu751f%5Cu6001%5Cu56ed%22%2C%22shpID%22%3A%220%22%2C%22workspace%22%3A%22dd%22%2C%22buildingString%22%3A%22%22%2C%22groupString%22%3A%22%22%2C%22landString%22%3A%22%22%2C%22parkString%22%3A%22%22%2C%22compare%22%3A0%2C%22category%22%3A3%7D%22%3B; _identity=2b707a975b35d9093170b1f674e06552264e80010015cc13d0dd52436f3cc1ebs%3A17%3A%22%5B34%2Cnull%2C2592000%5D%22%3B'
+    'PATH' => 'C:\\Program Files\\Broadcom\\Broadcom 802.11 Network Adapter\\Driver;;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\3.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\3.0\\bin\\x64;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'D:/wamp/www/lulublog/index.php'
+    'REMOTE_PORT' => '1590'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=post/default/detail&id=17'
+    'REQUEST_URI' => '/lulublog/index.php?r=post/default/detail&id=17'
+    'SCRIPT_NAME' => '/lulublog/index.php'
+    'PHP_SELF' => '/lulublog/index.php'
+    'REQUEST_TIME_FLOAT' => 1431389675.072
+    'REQUEST_TIME' => 1431389675
+]
+2015-05-12 00:15:55 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: posts' in D:\wamp\www\lulublog\static\themes\bifenxiang\modules\post\default\detail_default.php:89
+Stack trace:
+#0 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile()
+#1 D:\wamp\www\lulublog\source\core\base\BaseView.php(27): yii\base\View->renderFile()
+#2 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\View.php(149): source\core\base\BaseView->renderFile()
+#3 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render()
+#4 D:\wamp\www\lulublog\frontend\controllers\ContentController.php(61): yii\base\Controller->render()
+#5 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\InlineAction.php(55): frontend\controllers\ContentController->actionDetail()
+#6 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array()
+#7 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#8 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#9 D:\wamp\www\lulublog\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction()
+#10 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#11 D:\wamp\www\lulublog\index.php(23): yii\base\Application->run()
+#12 {main}
+2015-05-12 00:15:55 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'post/default/detail'
+    'id' => '17'
+]
+
+$_COOKIE = [
+    'currentPark' => 'bc0cd8448afbcf51cc9a7c374334b14dde43e220ed63b868ecbe9c4254fabaa2s:198:\"{\"id\":\"1\",\"code\":\"QD1\",\"name\":\"\\u9752\\u5c9b\\u4e2d\\u5fb7\\u751f\\u6001\\u56ed\",\"shpID\":\"0\",\"workspace\":\"dd\",\"buildingString\":\"\",\"groupString\":\"\",\"landString\":\"\",\"parkString\":\"\",\"compare\":0,\"category\":3}\";'
+    '_identity' => '2b707a975b35d9093170b1f674e06552264e80010015cc13d0dd52436f3cc1ebs:17:\"[34,null,2592000]\";'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Maxthon/3.0 Chrome/22.0.1229.79 Safari/537.1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost:8080/lulublog/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN'
+    'HTTP_ACCEPT_CHARSET' => 'GBK,utf-8;q=0.7,*;q=0.3'
+    'HTTP_COOKIE' => 'currentPark=bc0cd8448afbcf51cc9a7c374334b14dde43e220ed63b868ecbe9c4254fabaa2s%3A198%3A%22%7B%22id%22%3A%221%22%2C%22code%22%3A%22QD1%22%2C%22name%22%3A%22%5Cu9752%5Cu5c9b%5Cu4e2d%5Cu5fb7%5Cu751f%5Cu6001%5Cu56ed%22%2C%22shpID%22%3A%220%22%2C%22workspace%22%3A%22dd%22%2C%22buildingString%22%3A%22%22%2C%22groupString%22%3A%22%22%2C%22landString%22%3A%22%22%2C%22parkString%22%3A%22%22%2C%22compare%22%3A0%2C%22category%22%3A3%7D%22%3B; _identity=2b707a975b35d9093170b1f674e06552264e80010015cc13d0dd52436f3cc1ebs%3A17%3A%22%5B34%2Cnull%2C2592000%5D%22%3B'
+    'PATH' => 'C:\\Program Files\\Broadcom\\Broadcom 802.11 Network Adapter\\Driver;;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\3.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\3.0\\bin\\x64;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'D:/wamp/www/lulublog/index.php'
+    'REMOTE_PORT' => '1599'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=post/default/detail&id=17'
+    'REQUEST_URI' => '/lulublog/index.php?r=post/default/detail&id=17'
+    'SCRIPT_NAME' => '/lulublog/index.php'
+    'PHP_SELF' => '/lulublog/index.php'
+    'REQUEST_TIME_FLOAT' => 1431389755.501
+    'REQUEST_TIME' => 1431389755
+]
+2015-05-12 00:27:37 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: contens' in D:\wamp\www\lulublog\static\themes\bifenxiang\modules\post\default\detail_default.php:90
+Stack trace:
+#0 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile()
+#1 D:\wamp\www\lulublog\source\core\base\BaseView.php(27): yii\base\View->renderFile()
+#2 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\View.php(149): source\core\base\BaseView->renderFile()
+#3 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render()
+#4 D:\wamp\www\lulublog\frontend\controllers\ContentController.php(61): yii\base\Controller->render()
+#5 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\InlineAction.php(55): frontend\controllers\ContentController->actionDetail()
+#6 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array()
+#7 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#8 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#9 D:\wamp\www\lulublog\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction()
+#10 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#11 D:\wamp\www\lulublog\index.php(23): yii\base\Application->run()
+#12 {main}
+2015-05-12 00:27:37 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'post/default/detail'
+    'id' => '17'
+]
+
+$_COOKIE = [
+    'currentPark' => 'bc0cd8448afbcf51cc9a7c374334b14dde43e220ed63b868ecbe9c4254fabaa2s:198:\"{\"id\":\"1\",\"code\":\"QD1\",\"name\":\"\\u9752\\u5c9b\\u4e2d\\u5fb7\\u751f\\u6001\\u56ed\",\"shpID\":\"0\",\"workspace\":\"dd\",\"buildingString\":\"\",\"groupString\":\"\",\"landString\":\"\",\"parkString\":\"\",\"compare\":0,\"category\":3}\";'
+    '_identity' => '2b707a975b35d9093170b1f674e06552264e80010015cc13d0dd52436f3cc1ebs:17:\"[34,null,2592000]\";'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Maxthon/3.0 Chrome/22.0.1229.79 Safari/537.1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost:8080/lulublog/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN'
+    'HTTP_ACCEPT_CHARSET' => 'GBK,utf-8;q=0.7,*;q=0.3'
+    'HTTP_COOKIE' => 'currentPark=bc0cd8448afbcf51cc9a7c374334b14dde43e220ed63b868ecbe9c4254fabaa2s%3A198%3A%22%7B%22id%22%3A%221%22%2C%22code%22%3A%22QD1%22%2C%22name%22%3A%22%5Cu9752%5Cu5c9b%5Cu4e2d%5Cu5fb7%5Cu751f%5Cu6001%5Cu56ed%22%2C%22shpID%22%3A%220%22%2C%22workspace%22%3A%22dd%22%2C%22buildingString%22%3A%22%22%2C%22groupString%22%3A%22%22%2C%22landString%22%3A%22%22%2C%22parkString%22%3A%22%22%2C%22compare%22%3A0%2C%22category%22%3A3%7D%22%3B; _identity=2b707a975b35d9093170b1f674e06552264e80010015cc13d0dd52436f3cc1ebs%3A17%3A%22%5B34%2Cnull%2C2592000%5D%22%3B'
+    'PATH' => 'C:\\Program Files\\Broadcom\\Broadcom 802.11 Network Adapter\\Driver;;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\3.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\3.0\\bin\\x64;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'D:/wamp/www/lulublog/index.php'
+    'REMOTE_PORT' => '1653'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=post/default/detail&id=17'
+    'REQUEST_URI' => '/lulublog/index.php?r=post/default/detail&id=17'
+    'SCRIPT_NAME' => '/lulublog/index.php'
+    'PHP_SELF' => '/lulublog/index.php'
+    'REQUEST_TIME_FLOAT' => 1431390457.465
+    'REQUEST_TIME' => 1431390457
+]
+2015-05-12 00:28:06 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: post' in D:\wamp\www\lulublog\static\themes\bifenxiang\views\_inc\item.php:15
+Stack trace:
+#0 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile()
+#1 D:\wamp\www\lulublog\source\core\base\BaseView.php(27): yii\base\View->renderFile()
+#2 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\View.php(149): source\core\base\BaseView->renderFile()
+#3 D:\wamp\www\lulublog\static\themes\bifenxiang\views\_inc\content_list.php(31): yii\base\View->render()
+#4 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\View.php(328): ::unknown()
+#5 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile()
+#6 D:\wamp\www\lulublog\source\core\base\BaseView.php(27): yii\base\View->renderFile()
+#7 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\View.php(149): source\core\base\BaseView->renderFile()
+#8 D:\wamp\www\lulublog\static\themes\bifenxiang\modules\post\default\detail_default.php(90): yii\base\View->render()
+#9 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\View.php(328): ::unknown()
+#10 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile()
+#11 D:\wamp\www\lulublog\source\core\base\BaseView.php(27): yii\base\View->renderFile()
+#12 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\View.php(149): source\core\base\BaseView->renderFile()
+#13 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render()
+#14 D:\wamp\www\lulublog\frontend\controllers\ContentController.php(61): yii\base\Controller->render()
+#15 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\InlineAction.php(55): frontend\controllers\ContentController->actionDetail()
+#16 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array()
+#17 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#18 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#19 D:\wamp\www\lulublog\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction()
+#20 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#21 D:\wamp\www\lulublog\index.php(23): yii\base\Application->run()
+#22 {main}
+2015-05-12 00:28:06 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'post/default/detail'
+    'id' => '17'
+]
+
+$_COOKIE = [
+    'currentPark' => 'bc0cd8448afbcf51cc9a7c374334b14dde43e220ed63b868ecbe9c4254fabaa2s:198:\"{\"id\":\"1\",\"code\":\"QD1\",\"name\":\"\\u9752\\u5c9b\\u4e2d\\u5fb7\\u751f\\u6001\\u56ed\",\"shpID\":\"0\",\"workspace\":\"dd\",\"buildingString\":\"\",\"groupString\":\"\",\"landString\":\"\",\"parkString\":\"\",\"compare\":0,\"category\":3}\";'
+    '_identity' => '2b707a975b35d9093170b1f674e06552264e80010015cc13d0dd52436f3cc1ebs:17:\"[34,null,2592000]\";'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Maxthon/3.0 Chrome/22.0.1229.79 Safari/537.1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost:8080/lulublog/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN'
+    'HTTP_ACCEPT_CHARSET' => 'GBK,utf-8;q=0.7,*;q=0.3'
+    'HTTP_COOKIE' => 'currentPark=bc0cd8448afbcf51cc9a7c374334b14dde43e220ed63b868ecbe9c4254fabaa2s%3A198%3A%22%7B%22id%22%3A%221%22%2C%22code%22%3A%22QD1%22%2C%22name%22%3A%22%5Cu9752%5Cu5c9b%5Cu4e2d%5Cu5fb7%5Cu751f%5Cu6001%5Cu56ed%22%2C%22shpID%22%3A%220%22%2C%22workspace%22%3A%22dd%22%2C%22buildingString%22%3A%22%22%2C%22groupString%22%3A%22%22%2C%22landString%22%3A%22%22%2C%22parkString%22%3A%22%22%2C%22compare%22%3A0%2C%22category%22%3A3%7D%22%3B; _identity=2b707a975b35d9093170b1f674e06552264e80010015cc13d0dd52436f3cc1ebs%3A17%3A%22%5B34%2Cnull%2C2592000%5D%22%3B'
+    'PATH' => 'C:\\Program Files\\Broadcom\\Broadcom 802.11 Network Adapter\\Driver;;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\3.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\3.0\\bin\\x64;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'D:/wamp/www/lulublog/index.php'
+    'REMOTE_PORT' => '1657'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=post/default/detail&id=17'
+    'REQUEST_URI' => '/lulublog/index.php?r=post/default/detail&id=17'
+    'SCRIPT_NAME' => '/lulublog/index.php'
+    'PHP_SELF' => '/lulublog/index.php'
+    'REQUEST_TIME_FLOAT' => 1431390486.305
+    'REQUEST_TIME' => 1431390486
+]
+2015-05-12 00:28:24 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: source\models\Content::comments' in D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 D:\wamp\www\lulublog\vendor\yiisoft\yii2\db\BaseActiveRecord.php(247): yii\base\Component->__get('comments')
+#1 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\Model.php(926): yii\db\BaseActiveRecord->__get('comments')
+#2 D:\wamp\www\lulublog\static\themes\bifenxiang\views\_inc\item_pic.php(13): yii\base\Model->offsetGet('comments')
+#3 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\View.php(328): require('D:\wamp\www\lul...')
+#4 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('D:\wamp\www\lul...', Array)
+#5 D:\wamp\www\lulublog\source\core\base\BaseView.php(27): yii\base\View->renderFile('D:/wamp/www/lul...', Array, NULL)
+#6 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\View.php(149): source\core\base\BaseView->renderFile('D:/wamp/www/lul...', Array, NULL)
+#7 D:\wamp\www\lulublog\static\themes\bifenxiang\views\_inc\content_list.php(31): yii\base\View->render('@webroot/static...', Array)
+#8 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\View.php(328): require('D:\wamp\www\lul...')
+#9 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('D:\wamp\www\lul...', Array)
+#10 D:\wamp\www\lulublog\source\core\base\BaseView.php(27): yii\base\View->renderFile('D:/wamp/www/lul...', Array, NULL)
+#11 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\View.php(149): source\core\base\BaseView->renderFile('D:/wamp/www/lul...', Array, NULL)
+#12 D:\wamp\www\lulublog\static\themes\bifenxiang\modules\post\default\detail_default.php(120): yii\base\View->render('@webroot/static...', Array)
+#13 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\View.php(328): require('D:\wamp\www\lul...')
+#14 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('D:\wamp\www\lul...', Array)
+#15 D:\wamp\www\lulublog\source\core\base\BaseView.php(27): yii\base\View->renderFile('D:\wamp\www\lul...', Array, Object(source\modules\post\home\DefaultController))
+#16 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\View.php(149): source\core\base\BaseView->renderFile('D:\wamp\www\lul...', Array, Object(source\modules\post\home\DefaultController))
+#17 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('detail_default', Array, Object(source\modules\post\home\DefaultController))
+#18 D:\wamp\www\lulublog\frontend\controllers\ContentController.php(61): yii\base\Controller->render('detail_default', Array)
+#19 [internal function]: frontend\controllers\ContentController->actionDetail('17')
+#20 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#21 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#22 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('detail', Array)
+#23 D:\wamp\www\lulublog\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('post/default/de...', Array)
+#24 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#25 D:\wamp\www\lulublog\index.php(23): yii\base\Application->run()
+#26 {main}
+2015-05-12 00:28:24 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'post/default/detail'
+    'id' => '17'
+]
+
+$_COOKIE = [
+    'currentPark' => 'bc0cd8448afbcf51cc9a7c374334b14dde43e220ed63b868ecbe9c4254fabaa2s:198:\"{\"id\":\"1\",\"code\":\"QD1\",\"name\":\"\\u9752\\u5c9b\\u4e2d\\u5fb7\\u751f\\u6001\\u56ed\",\"shpID\":\"0\",\"workspace\":\"dd\",\"buildingString\":\"\",\"groupString\":\"\",\"landString\":\"\",\"parkString\":\"\",\"compare\":0,\"category\":3}\";'
+    '_identity' => '2b707a975b35d9093170b1f674e06552264e80010015cc13d0dd52436f3cc1ebs:17:\"[34,null,2592000]\";'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Maxthon/3.0 Chrome/22.0.1229.79 Safari/537.1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost:8080/lulublog/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN'
+    'HTTP_ACCEPT_CHARSET' => 'GBK,utf-8;q=0.7,*;q=0.3'
+    'HTTP_COOKIE' => 'currentPark=bc0cd8448afbcf51cc9a7c374334b14dde43e220ed63b868ecbe9c4254fabaa2s%3A198%3A%22%7B%22id%22%3A%221%22%2C%22code%22%3A%22QD1%22%2C%22name%22%3A%22%5Cu9752%5Cu5c9b%5Cu4e2d%5Cu5fb7%5Cu751f%5Cu6001%5Cu56ed%22%2C%22shpID%22%3A%220%22%2C%22workspace%22%3A%22dd%22%2C%22buildingString%22%3A%22%22%2C%22groupString%22%3A%22%22%2C%22landString%22%3A%22%22%2C%22parkString%22%3A%22%22%2C%22compare%22%3A0%2C%22category%22%3A3%7D%22%3B; _identity=2b707a975b35d9093170b1f674e06552264e80010015cc13d0dd52436f3cc1ebs%3A17%3A%22%5B34%2Cnull%2C2592000%5D%22%3B'
+    'PATH' => 'C:\\Program Files\\Broadcom\\Broadcom 802.11 Network Adapter\\Driver;;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\3.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\3.0\\bin\\x64;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'D:/wamp/www/lulublog/index.php'
+    'REMOTE_PORT' => '1660'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=post/default/detail&id=17'
+    'REQUEST_URI' => '/lulublog/index.php?r=post/default/detail&id=17'
+    'SCRIPT_NAME' => '/lulublog/index.php'
+    'PHP_SELF' => '/lulublog/index.php'
+    'REQUEST_TIME_FLOAT' => 1431390504.182
+    'REQUEST_TIME' => 1431390504
+]
+2015-05-12 00:38:08 [127.0.0.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The view file does not exist: D:\wamp\www\lulublog\static\themes\bifenxiang\views\_inc\post_list_widget.php' in D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\View.php:229
+Stack trace:
+#0 D:\wamp\www\lulublog\source\core\base\BaseView.php(27): yii\base\View->renderFile('D:/wamp/www/lul...', Array, NULL)
+#1 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\View.php(149): source\core\base\BaseView->renderFile('D:/wamp/www/lul...', Array, NULL)
+#2 D:\wamp\www\lulublog\static\themes\bifenxiang\views\site\index.php(40): yii\base\View->render('@webroot/static...', Array)
+#3 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\View.php(328): require('D:\wamp\www\lul...')
+#4 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('D:\wamp\www\lul...', Array)
+#5 D:\wamp\www\lulublog\source\core\base\BaseView.php(27): yii\base\View->renderFile('D:\wamp\www\lul...', Array, Object(frontend\controllers\SiteController))
+#6 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\View.php(149): source\core\base\BaseView->renderFile('D:\wamp\www\lul...', Array, Object(frontend\controllers\SiteController))
+#7 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('index', Array, Object(frontend\controllers\SiteController))
+#8 D:\wamp\www\lulublog\frontend\controllers\SiteController.php(34): yii\base\Controller->render('index', Array)
+#9 [internal function]: frontend\controllers\SiteController->actionIndex()
+#10 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#11 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#12 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#13 D:\wamp\www\lulublog\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('', Array)
+#14 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 D:\wamp\www\lulublog\index.php(23): yii\base\Application->run()
+#16 {main}
+2015-05-12 00:38:08 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'currentPark' => 'bc0cd8448afbcf51cc9a7c374334b14dde43e220ed63b868ecbe9c4254fabaa2s:198:\"{\"id\":\"1\",\"code\":\"QD1\",\"name\":\"\\u9752\\u5c9b\\u4e2d\\u5fb7\\u751f\\u6001\\u56ed\",\"shpID\":\"0\",\"workspace\":\"dd\",\"buildingString\":\"\",\"groupString\":\"\",\"landString\":\"\",\"parkString\":\"\",\"compare\":0,\"category\":3}\";'
+    '_identity' => '2b707a975b35d9093170b1f674e06552264e80010015cc13d0dd52436f3cc1ebs:17:\"[34,null,2592000]\";'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Maxthon/3.0 Chrome/22.0.1229.79 Safari/537.1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost:8080/lulublog/index.php?r=page'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN'
+    'HTTP_ACCEPT_CHARSET' => 'GBK,utf-8;q=0.7,*;q=0.3'
+    'HTTP_COOKIE' => 'currentPark=bc0cd8448afbcf51cc9a7c374334b14dde43e220ed63b868ecbe9c4254fabaa2s%3A198%3A%22%7B%22id%22%3A%221%22%2C%22code%22%3A%22QD1%22%2C%22name%22%3A%22%5Cu9752%5Cu5c9b%5Cu4e2d%5Cu5fb7%5Cu751f%5Cu6001%5Cu56ed%22%2C%22shpID%22%3A%220%22%2C%22workspace%22%3A%22dd%22%2C%22buildingString%22%3A%22%22%2C%22groupString%22%3A%22%22%2C%22landString%22%3A%22%22%2C%22parkString%22%3A%22%22%2C%22compare%22%3A0%2C%22category%22%3A3%7D%22%3B; _identity=2b707a975b35d9093170b1f674e06552264e80010015cc13d0dd52436f3cc1ebs%3A17%3A%22%5B34%2Cnull%2C2592000%5D%22%3B'
+    'PATH' => 'C:\\Program Files\\Broadcom\\Broadcom 802.11 Network Adapter\\Driver;;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\3.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\3.0\\bin\\x64;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'D:/wamp/www/lulublog/index.php'
+    'REMOTE_PORT' => '1747'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/lulublog/'
+    'SCRIPT_NAME' => '/lulublog/index.php'
+    'PHP_SELF' => '/lulublog/index.php'
+    'REQUEST_TIME_FLOAT' => 1431391088.111
+    'REQUEST_TIME' => 1431391088
+]
+2015-05-12 00:44:14 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "page/detail".' in D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\wamp\www\lulublog\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('page/detail', Array)
+#1 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\wamp\www\lulublog\index.php(23): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\wamp\www\lulublog\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\wamp\www\lulublog\index.php(23): yii\base\Application->run()
+#2 {main}
+2015-05-12 00:44:14 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'page/detail'
+    'id' => '17'
+]
+
+$_COOKIE = [
+    'currentPark' => 'bc0cd8448afbcf51cc9a7c374334b14dde43e220ed63b868ecbe9c4254fabaa2s:198:\"{\"id\":\"1\",\"code\":\"QD1\",\"name\":\"\\u9752\\u5c9b\\u4e2d\\u5fb7\\u751f\\u6001\\u56ed\",\"shpID\":\"0\",\"workspace\":\"dd\",\"buildingString\":\"\",\"groupString\":\"\",\"landString\":\"\",\"parkString\":\"\",\"compare\":0,\"category\":3}\";'
+    '_identity' => '2b707a975b35d9093170b1f674e06552264e80010015cc13d0dd52436f3cc1ebs:17:\"[34,null,2592000]\";'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Maxthon/3.0 Chrome/22.0.1229.79 Safari/537.1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost:8080/lulublog/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN'
+    'HTTP_ACCEPT_CHARSET' => 'GBK,utf-8;q=0.7,*;q=0.3'
+    'HTTP_COOKIE' => 'currentPark=bc0cd8448afbcf51cc9a7c374334b14dde43e220ed63b868ecbe9c4254fabaa2s%3A198%3A%22%7B%22id%22%3A%221%22%2C%22code%22%3A%22QD1%22%2C%22name%22%3A%22%5Cu9752%5Cu5c9b%5Cu4e2d%5Cu5fb7%5Cu751f%5Cu6001%5Cu56ed%22%2C%22shpID%22%3A%220%22%2C%22workspace%22%3A%22dd%22%2C%22buildingString%22%3A%22%22%2C%22groupString%22%3A%22%22%2C%22landString%22%3A%22%22%2C%22parkString%22%3A%22%22%2C%22compare%22%3A0%2C%22category%22%3A3%7D%22%3B; _identity=2b707a975b35d9093170b1f674e06552264e80010015cc13d0dd52436f3cc1ebs%3A17%3A%22%5B34%2Cnull%2C2592000%5D%22%3B'
+    'PATH' => 'C:\\Program Files\\Broadcom\\Broadcom 802.11 Network Adapter\\Driver;;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\3.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\3.0\\bin\\x64;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'D:/wamp/www/lulublog/index.php'
+    'REMOTE_PORT' => '1833'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=page/detail&id=17'
+    'REQUEST_URI' => '/lulublog/index.php?r=page/detail&id=17'
+    'SCRIPT_NAME' => '/lulublog/index.php'
+    'PHP_SELF' => '/lulublog/index.php'
+    'REQUEST_TIME_FLOAT' => 1431391454.175
+    'REQUEST_TIME' => 1431391454
+]
+2015-05-12 00:46:07 [127.0.0.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The view file does not exist: D:\wamp\www\lulublog\static\themes\bifenxiang\views\_inc\post_list_widget.php' in D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\View.php:229
+Stack trace:
+#0 D:\wamp\www\lulublog\source\core\base\BaseView.php(27): yii\base\View->renderFile('D:/wamp/www/lul...', Array, NULL)
+#1 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\View.php(149): source\core\base\BaseView->renderFile('D:/wamp/www/lul...', Array, NULL)
+#2 D:\wamp\www\lulublog\static\themes\bifenxiang\modules\post\default\index_default.php(39): yii\base\View->render('@webroot/static...', Array)
+#3 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\View.php(328): require('D:\wamp\www\lul...')
+#4 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('D:\wamp\www\lul...', Array)
+#5 D:\wamp\www\lulublog\source\core\base\BaseView.php(27): yii\base\View->renderFile('D:\wamp\www\lul...', Array, Object(source\modules\post\home\DefaultController))
+#6 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\View.php(149): source\core\base\BaseView->renderFile('D:\wamp\www\lul...', Array, Object(source\modules\post\home\DefaultController))
+#7 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('index_default', Array, Object(source\modules\post\home\DefaultController))
+#8 D:\wamp\www\lulublog\frontend\controllers\ContentController.php(36): yii\base\Controller->render('index_default', Array)
+#9 [internal function]: frontend\controllers\ContentController->actionIndex()
+#10 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#11 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#12 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#13 D:\wamp\www\lulublog\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('post', Array)
+#14 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 D:\wamp\www\lulublog\index.php(23): yii\base\Application->run()
+#16 {main}
+2015-05-12 00:46:07 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'post'
+]
+
+$_COOKIE = [
+    'currentPark' => 'bc0cd8448afbcf51cc9a7c374334b14dde43e220ed63b868ecbe9c4254fabaa2s:198:\"{\"id\":\"1\",\"code\":\"QD1\",\"name\":\"\\u9752\\u5c9b\\u4e2d\\u5fb7\\u751f\\u6001\\u56ed\",\"shpID\":\"0\",\"workspace\":\"dd\",\"buildingString\":\"\",\"groupString\":\"\",\"landString\":\"\",\"parkString\":\"\",\"compare\":0,\"category\":3}\";'
+    '_identity' => '2b707a975b35d9093170b1f674e06552264e80010015cc13d0dd52436f3cc1ebs:17:\"[34,null,2592000]\";'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Maxthon/3.0 Chrome/22.0.1229.79 Safari/537.1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost:8080/lulublog/index.php?r=page/default/detail&id=17'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN'
+    'HTTP_ACCEPT_CHARSET' => 'GBK,utf-8;q=0.7,*;q=0.3'
+    'HTTP_COOKIE' => 'currentPark=bc0cd8448afbcf51cc9a7c374334b14dde43e220ed63b868ecbe9c4254fabaa2s%3A198%3A%22%7B%22id%22%3A%221%22%2C%22code%22%3A%22QD1%22%2C%22name%22%3A%22%5Cu9752%5Cu5c9b%5Cu4e2d%5Cu5fb7%5Cu751f%5Cu6001%5Cu56ed%22%2C%22shpID%22%3A%220%22%2C%22workspace%22%3A%22dd%22%2C%22buildingString%22%3A%22%22%2C%22groupString%22%3A%22%22%2C%22landString%22%3A%22%22%2C%22parkString%22%3A%22%22%2C%22compare%22%3A0%2C%22category%22%3A3%7D%22%3B; _identity=2b707a975b35d9093170b1f674e06552264e80010015cc13d0dd52436f3cc1ebs%3A17%3A%22%5B34%2Cnull%2C2592000%5D%22%3B'
+    'PATH' => 'C:\\Program Files\\Broadcom\\Broadcom 802.11 Network Adapter\\Driver;;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\3.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\3.0\\bin\\x64;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'D:/wamp/www/lulublog/index.php'
+    'REMOTE_PORT' => '1854'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=post'
+    'REQUEST_URI' => '/lulublog/index.php?r=post'
+    'SCRIPT_NAME' => '/lulublog/index.php'
+    'PHP_SELF' => '/lulublog/index.php'
+    'REQUEST_TIME_FLOAT' => 1431391567.446
+    'REQUEST_TIME' => 1431391567
+]
+2015-05-12 00:48:09 [127.0.0.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The view file does not exist: D:\wamp\www\lulublog\static\themes\bifenxiang\views\_inc\post_list_widget.php' in D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\View.php:229
+Stack trace:
+#0 D:\wamp\www\lulublog\source\core\base\BaseView.php(27): yii\base\View->renderFile('D:/wamp/www/lul...', Array, NULL)
+#1 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\View.php(149): source\core\base\BaseView->renderFile('D:/wamp/www/lul...', Array, NULL)
+#2 D:\wamp\www\lulublog\static\themes\bifenxiang\modules\page\default\index_default.php(39): yii\base\View->render('@webroot/static...', Array)
+#3 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\View.php(328): require('D:\wamp\www\lul...')
+#4 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('D:\wamp\www\lul...', Array)
+#5 D:\wamp\www\lulublog\source\core\base\BaseView.php(27): yii\base\View->renderFile('D:\wamp\www\lul...', Array, Object(source\modules\page\home\DefaultController))
+#6 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\View.php(149): source\core\base\BaseView->renderFile('D:\wamp\www\lul...', Array, Object(source\modules\page\home\DefaultController))
+#7 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('index_default', Array, Object(source\modules\page\home\DefaultController))
+#8 D:\wamp\www\lulublog\frontend\controllers\ContentController.php(36): yii\base\Controller->render('index_default', Array)
+#9 [internal function]: frontend\controllers\ContentController->actionIndex()
+#10 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#11 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#12 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#13 D:\wamp\www\lulublog\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('page', Array)
+#14 D:\wamp\www\lulublog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 D:\wamp\www\lulublog\index.php(23): yii\base\Application->run()
+#16 {main}
+2015-05-12 00:48:09 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'page'
+]
+
+$_COOKIE = [
+    'currentPark' => 'bc0cd8448afbcf51cc9a7c374334b14dde43e220ed63b868ecbe9c4254fabaa2s:198:\"{\"id\":\"1\",\"code\":\"QD1\",\"name\":\"\\u9752\\u5c9b\\u4e2d\\u5fb7\\u751f\\u6001\\u56ed\",\"shpID\":\"0\",\"workspace\":\"dd\",\"buildingString\":\"\",\"groupString\":\"\",\"landString\":\"\",\"parkString\":\"\",\"compare\":0,\"category\":3}\";'
+    '_identity' => '2b707a975b35d9093170b1f674e06552264e80010015cc13d0dd52436f3cc1ebs:17:\"[34,null,2592000]\";'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Maxthon/3.0 Chrome/22.0.1229.79 Safari/537.1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost:8080/lulublog/index.php?r=post/default/detail&id=7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN'
+    'HTTP_ACCEPT_CHARSET' => 'GBK,utf-8;q=0.7,*;q=0.3'
+    'HTTP_COOKIE' => 'currentPark=bc0cd8448afbcf51cc9a7c374334b14dde43e220ed63b868ecbe9c4254fabaa2s%3A198%3A%22%7B%22id%22%3A%221%22%2C%22code%22%3A%22QD1%22%2C%22name%22%3A%22%5Cu9752%5Cu5c9b%5Cu4e2d%5Cu5fb7%5Cu751f%5Cu6001%5Cu56ed%22%2C%22shpID%22%3A%220%22%2C%22workspace%22%3A%22dd%22%2C%22buildingString%22%3A%22%22%2C%22groupString%22%3A%22%22%2C%22landString%22%3A%22%22%2C%22parkString%22%3A%22%22%2C%22compare%22%3A0%2C%22category%22%3A3%7D%22%3B; _identity=2b707a975b35d9093170b1f674e06552264e80010015cc13d0dd52436f3cc1ebs%3A17%3A%22%5B34%2Cnull%2C2592000%5D%22%3B'
+    'PATH' => 'C:\\Program Files\\Broadcom\\Broadcom 802.11 Network Adapter\\Driver;;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\3.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\3.0\\bin\\x64;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) PHP/5.4.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'D:/wamp/www/lulublog/index.php'
+    'REMOTE_PORT' => '1896'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=page'
+    'REQUEST_URI' => '/lulublog/index.php?r=page'
+    'SCRIPT_NAME' => '/lulublog/index.php'
+    'PHP_SELF' => '/lulublog/index.php'
+    'REQUEST_TIME_FLOAT' => 1431391689.544
+    'REQUEST_TIME' => 1431391689
+]

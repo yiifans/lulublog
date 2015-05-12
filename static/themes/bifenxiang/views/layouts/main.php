@@ -2,6 +2,7 @@
 
 use source\libs\Resource;
 use source\models\Menu;
+use source\LuLu;
 
 
 $themeUrl= Resource::getThemeUrl();
@@ -73,7 +74,7 @@ $themeUrl= Resource::getThemeUrl();
     <footer class="footer">
         <div class="footer-inner">
             <div class="copyright pull-left">
-                <a href="http://bb178.com/" title="必分享">必分享</a> 佛山市万钧金属有限公司版权所有，<a href="http://www.miitbeian.gov.cn/">粤ICP备10078168号-2</a>，保留一切权利 ·   © 2011-2015
+                <a href="<?php echo LuLu::getAlias('@web')?>" >LuLu Blog</a> 保留一切权利 ·   © 2011-2015
             </div>
             <div class="trackcode pull-right">
                 统计代码

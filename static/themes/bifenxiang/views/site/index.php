@@ -37,13 +37,13 @@ $themeUrl= Resource::getThemeUrl();
             <div class="widget d_postlist">
                 <div class="title"><h2>为您推荐</h2></div>
                 <ul>
-                	<?php echo $this->render(Resource::getThemePath('/views/_inc/post_list_widget'),['orderBy'=>'created_at desc']);?>
+                	<?php echo $this->render(Resource::getThemePath('/views/_inc/content_list'),['orderBy'=>'created_at desc']);?>
                </ul>
             </div>
             <div class="widget d_postlist">
                 <div class="title"><h2>热评文章</h2></div>
                 <ul>
-                	<?php echo $this->render(Resource::getThemePath('/views/_inc/post_list_widget'),['orderBy'=>'view_count desc']);?>
+                	<?php echo $this->render(Resource::getThemePath('/views/_inc/content_list'),['orderBy'=>'view_count desc']);?>
                 </ul>
             </div>
             <div class="widget ds-widget-recent-visitors">
