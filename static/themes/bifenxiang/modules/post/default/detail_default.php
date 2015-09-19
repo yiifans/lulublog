@@ -34,30 +34,15 @@ $takonomies = Takonomy::getArrayTree('post');
                 </header>
                 <article class="article-content">
                 	<?php echo $model['body_body'] ?>
-                	
-
-                    <h2><strong><span style="color: #ff6600;">分享是一种快乐，请和您的朋友一起分享吧。</span></strong></h2>
-
-
-                    <div class="article-social">
-                        <a href="javascript:;" data-action="ding" data-id="3975" id="Addlike" class="action"><i class="fa fa-heart-o"></i>喜欢 (<span class="count">9</span>)</a><span class="or">or</span><span class="action action-share bdsharebuttonbox"><i class="fa fa-share-alt"></i>分享 (<span class="bds_count" data-cmd="count" title="累计分享0次">0</span>)<div class="action-popover"><div class="popover top in"><div class="arrow"></div><div class="popover-content"><a href="#" class="sinaweibo fa fa-weibo" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_qzone fa fa-star" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="tencentweibo fa fa-tencent-weibo" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="qq fa fa-qq" data-cmd="sqq" title="分享到QQ好友"></a><a href="#" class="bds_renren fa fa-renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin fa fa-weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_more fa fa-ellipsis-h" data-cmd="more"></a></div></div></div></span>
-                    </div>
                 </article>
-                <footer class="article-footer">
-                    <div class="article-tags"><i class="fa fa-tags"></i><a href="" rel="tag">走私</a></div>
-                </footer>
-                <nav class="article-nav">
-                    <span class="article-nav-prev"><i class="fa fa-angle-double-left"></i> <a href="" rel="prev">他将面包车改成公寓环游世界</a></span>
-                    <span class="article-nav-next"><a href="" rel="next">你永远都想不到这个摄影师是如何创作这些非凡的假发？</a>  <i class="fa fa-angle-double-right"></i></span>
-                </nav>
-
+               <div class="line"></div>
                 <div class="related_top">
                     <div class="related_posts">
-                        <ul class="related_img">
-                            <?php echo $this->render(Resource::getThemePath('/views/_inc/content_list'),['orderBy'=>'created_at desc','item'=>'item_related','limit'=>4]);?>   
-                        </ul>
-
-
+                        <div class="related_img">
+                            <ul>
+                                <?php echo $this->render(Resource::getThemePath('/views/_inc/content_list'),['orderBy'=>'created_at desc','item'=>'item_related','limit'=>4]);?>   
+                            </ul>
+                        </div>
                         <div class="relates">
                             <ul>
                                 

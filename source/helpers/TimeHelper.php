@@ -31,9 +31,16 @@ class TimeHelper
 		$day = floor($diff / 86400);
 		
 		if($day > 0) {
-			return $day."天前";
+            if($day<7)
+            {
+                return $day."天前";
+            }
+            else
+            {
+                return date('Y-m-d', $timer);
+            }
 		}
-		
+        
 		$free = $diff % 86400;
 		if($free>0){
 			$hour = floor($free / 3600);

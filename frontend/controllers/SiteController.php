@@ -21,7 +21,7 @@ class SiteController extends BaseFrontController
     public function actionIndex()
     {
     	$query = Content::leftJoinWith('takonomy');
-    	$locals = LuLu::getPagedRows($query,['orderBy'=>'created_at desc','pageSize'=>3]);
+    	$locals = LuLu::getPagedRows($query,['orderBy'=>'created_at desc','pageSize'=>6]);
     	
     	$dataProvider = new ActiveDataProvider([
 			'query'=>$query,

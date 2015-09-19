@@ -9423,3 +9423,75 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1431391689.544
     'REQUEST_TIME' => 1431391689
 ]
+2015-09-19 15:41:42 [127.0.0.1][-][-][error][yii\base\ErrorException:4096] exception 'yii\base\ErrorException' with message 'Argument 1 passed to yii\db\Query::andFilterWhere() must be of the type array, string given, called in C:\wamp\www\lulublog\static\themes\bifenxiang\views\_inc\content_list.php on line 38 and defined' in C:\wamp\www\lulublog\vendor\yiisoft\yii2\db\QueryTrait.php:180
+Stack trace:
+#0 C:\wamp\www\lulublog\vendor\yiisoft\yii2\base\View.php(328): ::unknown()
+#1 C:\wamp\www\lulublog\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile()
+#2 C:\wamp\www\lulublog\source\core\base\BaseView.php(27): yii\base\View->renderFile()
+#3 C:\wamp\www\lulublog\vendor\yiisoft\yii2\base\View.php(149): source\core\base\BaseView->renderFile()
+#4 C:\wamp\www\lulublog\static\themes\bifenxiang\modules\post\default\detail_default.php(57): yii\base\View->render()
+#5 C:\wamp\www\lulublog\vendor\yiisoft\yii2\base\View.php(328): ::unknown()
+#6 C:\wamp\www\lulublog\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile()
+#7 C:\wamp\www\lulublog\source\core\base\BaseView.php(27): yii\base\View->renderFile()
+#8 C:\wamp\www\lulublog\vendor\yiisoft\yii2\base\View.php(149): source\core\base\BaseView->renderFile()
+#9 C:\wamp\www\lulublog\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render()
+#10 C:\wamp\www\lulublog\frontend\controllers\ContentController.php(61): yii\base\Controller->render()
+#11 C:\wamp\www\lulublog\vendor\yiisoft\yii2\base\InlineAction.php(55): frontend\controllers\ContentController->actionDetail()
+#12 C:\wamp\www\lulublog\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{C:\wamp\www\lulublog\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#13 C:\wamp\www\lulublog\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#14 C:\wamp\www\lulublog\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#15 C:\wamp\www\lulublog\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction()
+#16 C:\wamp\www\lulublog\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#17 C:\wamp\www\lulublog\index.php(23): yii\base\Application->run()
+#18 {main}
+2015-09-19 15:41:42 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'post/default/detail'
+    'id' => '7'
+]
+
+$_COOKIE = [
+    'CNZZDATA5820522' => 'cnzz_eid=303768654-1429763520-&ntime=1429763520'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:8880'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Maxthon/3.0 Chrome/22.0.1229.79 Safari/537.1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost:8880/lulublog/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US'
+    'HTTP_ACCEPT_CHARSET' => 'GBK,utf-8;q=0.7,*;q=0.3'
+    'HTTP_COOKIE' => 'CNZZDATA5820522=cnzz_eid%3D303768654-1429763520-%26ntime%3D1429763520'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Microsoft ASP.NET\\ASP.NET Web Pages\\v1.0\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\VSShell\\Common7\\IDE\\;C:\\Program Files (x86)\\Microsoft Visual Studio 9.0\\Common7\\IDE\\PrivateAssemblies\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\DTS\\Binn\\;C:\\Program Files (x86)\\Subversion\\bin;C:\\Program Files (x86)\\Git\\cmd;C:\\Python27;C:\\wamp\\bin\\php\\php5.5.12;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at localhost Port 8880</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8880'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/wamp/www/lulublog/index.php'
+    'REMOTE_PORT' => '59616'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=post/default/detail&id=7'
+    'REQUEST_URI' => '/lulublog/index.php?r=post/default/detail&id=7'
+    'SCRIPT_NAME' => '/lulublog/index.php'
+    'PHP_SELF' => '/lulublog/index.php'
+    'REQUEST_TIME_FLOAT' => 1442670102.198
+    'REQUEST_TIME' => 1442670102
+]

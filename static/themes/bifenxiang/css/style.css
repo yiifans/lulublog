@@ -5818,3 +5818,11 @@ a.label-inverse:hover, a.badge-inverse:hover {
     .current-page-ancestor a a:hover {
         background: #fff;
     }
+
+.line {
+    margin:0px 25px;
+border-bottom:1px solid #dedede;
+height:0px;
+_height:0px;
+overflow:hidden;
+}

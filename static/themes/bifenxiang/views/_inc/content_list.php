@@ -16,24 +16,31 @@ if(!isset($limit))
 {
 	$limit = 5;
 }
-
 if(!isset($item))
 {
     $item='item_pic';
 }
+$where=[];
 if(!isset($isPic))
 {
     $isPic = true;
 }
-$where=[];
+
 $moduleId = LuLu::$app->controller->module->id;
 if( $moduleId!=='app-frontend')
 {
     $where = ['content_type'=>$moduleId];
 }
 
+$query = 	Content::findQuery($where,$orderBy);
+if($isPic)
+{
+    $query->andWhere(['!=','thumb','']);
+}
+$query->limit($limit);
+$contents = $query->all();
 
-$contents = 	Content::findAll($where,$orderBy,$limit);
+
 
 ?>
 

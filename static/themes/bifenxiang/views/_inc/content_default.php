@@ -24,7 +24,7 @@ $url=Url::to(['/'.$post['content_type'].'/default/detail','id'=>$post['id']]);
 
     <?php if(!empty($post['thumb'])):?>
     <div class="focus">
-        <a target="_blank" href="<?php echo $url;?>"><img src="<?php echo $post['thumb']?>?imageView2/1/w/630/h/200" alt="再分享一个用托盘DIY制作花盆" class="wp-post-image" width="630" height="200" /></a>
+        <a target="_blank" href="<?php echo $url;?>"><img src="<?php echo $post['thumb']?>?imageView2/1/w/630/h/200" alt="再分享一个用托盘DIY制作花盆" class="wp-post-image" width="630" height="120" style="height:120px;" /></a>
     </div>
 	<?php endif;?>
 			
